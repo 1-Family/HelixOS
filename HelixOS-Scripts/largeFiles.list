@@ -1,0 +1,6 @@
+./prebuilts/qemu-kernel/x86_64/vmlinux-qemu
+./prebuilts/eclipse/platform/org.eclipse.platform-3.7.2.zip
+./prebuilts/sdk/tools/windows/libclang.dll
+./prebuilts/sdk/tools/windows/libLLVM.dll
+./prebuilts/clang/linux-x86/host/3.4/bin/clang
+./external/eclipse-basebuilder/src/eclipse-sourceBuild-srcIncluded-3.6.2.zip
