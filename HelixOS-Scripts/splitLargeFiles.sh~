@@ -1,5 +1,5 @@
 #!/bin/bash
-rootFolder=$PWD/..
+rootFolder=$PWD
 while read in; do 
 	cd $rootFolder
 	fileDir=$(dirname "$in")/.large/$(basename "$in")
