@@ -1,0 +1,40 @@
+plan:
+
+1. clean aosp 5.0 export - DONE
+2. For each folder:
+	2.1. create local git repository and import into it 
+	2.2. Sync repo with remote 
+3. export clean HelixOS 
+4. For each folder:
+	4.1 merge changes
+	4.2 Sync repo with remote
+
+5. Test: 
+	5.1 Pull repos as new 
+	5.2 Create script to pull them all (including prebuilts)
+	5.3 Create script to merge .large
+	5.4 Build HelixOS & install on nexus 6 <-
+	5.5 Create build instructions
+	5.6 Setup general repository with Makefile, docs, scripts, etc as HelixOS
+
+
+git init
+git remote add origin https://github.com/HelixOS/prebuilts-[???????].git
+git fetch origin
+git add .
+git commit -m "Adding AOSP source"
+git push origin master
+
+
+git ignore each large file:
+create .gitignore with each file
+
+large files plan:
+Pre commit hook:
+1. for each file in largeFiles:
+	1.1. create in each file location ".large" directory
+	1.2. split file into file.part1, file.part2, etc
+
+Post pull hook:
+1. for each file in largeFiles:
+	1.1. create  file from ".large" directory
