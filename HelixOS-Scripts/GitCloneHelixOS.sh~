@@ -38,5 +38,3 @@ git clone https://github.com/HelixOS/prebuilts-tools.git ./prebuilts/tools/
 git clone https://github.com/HelixOS/HelixOS.git ./tmp
 rsync -av ./tmp/ ./
 rm -rf ./tmp
-mkdir external/chromium_org/third_party/angle/.git
-touch external/chromium_org/third_party/angle/.git/index
